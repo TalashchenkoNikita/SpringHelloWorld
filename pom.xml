@@ -24,6 +24,10 @@
   <packaging>war</packaging>
 
   <name>SpringHelloWorld</name>
+  <properties>
+    <maven.compiler.source>18</maven.compiler.source>
+    <maven.compiler.target>18</maven.compiler.target>
+  </properties>
   <groupId>org.example</groupId>
   <artifactId>SpringHelloWorld</artifactId>
   <version>1.0-SNAPSHOT</version>
@@ -49,6 +53,28 @@
   </build>
 
   <dependencies>
+
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-core</artifactId>
+      <version>6.0.3</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.springframework/spring-beans -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-beans</artifactId>
+      <version>6.0.3</version>
+    </dependency>
+
+
+    <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>6.0.3</version>
+    </dependency>
+
     <!--dependency>
       <groupId>org.example</groupId>
       <artifactId>[the artifact id of the block to be mounted]</artifactId>
